@@ -1,0 +1,34 @@
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Ankit Verma"
+      },
+      "name": "Ankit Verma",
+      "url": "https://avcodewizard.github.io/",
+      "image": "https://avcodewizard.github.io/assets/img/Ankit-Verma.jpg",
+      "sameAs": [
+        "https://www.instagram.com/pixels.queue/",
+        "https://www.linkedin.com/in/ankitvermaonline/",
+        "https://github.com/avcodewizard",
+        "https://avcodewizard.github.io"
+      ],
+      "jobTitle": "Software Engineer",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Chhatrapati Shahu Ji Maharaj University, Kanpur"
+      },
+      "knowsAbout": [
+        "Web Development",
+        "Software Engineering",
+        "Full Stack Development",
+        "JavaScript",
+        "Laravel",
+        "Php",
+        "Wordpress",
+        "Codeigniter"
+      ]
+    }
+  </script>

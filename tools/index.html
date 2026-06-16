@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools — Interactive Experiments | Ankit Verma</title>
+  <meta name="description" content="Interactive tools and experiments including NeonTunnel GPU benchmark.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../assets/tools/css/tools.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="https://avcodewizard.github.io/assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-btn" id="closeNav">&times;</button>
+    <a href="/">Portfolio</a>
+    <a href="/tools/" class="active">Tools</a>
+    <a href="/chat/">Chat</a>
+  </div>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="/" class="logo">Tools</a>
+        
+        <nav class="nav">
+          <a href="/">Portfolio</a>
+          <a href="/tools/" class="active">Tools</a>
+          <a href="/chat/">Chat</a>
+        </nav>
+        
+        <a href="/" class="back-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back
+        </a>
+        
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">
+        Interactive <span class="grad">Tools</span>
+      </h1>
+      <p class="hero-subtitle">
+        A collection of browser-based experiments, benchmarks, and fun utilities. 
+        Play around and explore what modern web technologies can do.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Tools Grid -->
+  <section class="tools-section">
+    <div class="container">
+      <div class="tools-grid">
+        
+        <!-- NeonTunnel - GPU Benchmark -->
+        <a href="neontunnel.html" target="_blank" class="tool-card">
+          <div class="tool-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </div>
+          <h3 class="tool-title">NeonTunnel</h3>
+          <p class="tool-desc">
+            GPU Benchmark — Fly through a volumetric neon tunnel with real-time ray marching. Features FPS monitoring, stress testing, and interactive camera controls.
+          </p>
+          <div class="tool-tags">
+            <span class="tool-tag">WebGL</span>
+            <span class="tool-tag">Three.js</span>
+            <span class="tool-tag">GPU</span>
+          </div>
+        </a>
+        
+        <!-- Password Generator -->
+        <a href="password-generator.html" class="tool-card">
+          <div class="tool-icon" style="background: linear-gradient(135deg, #6c63ff, #ff6584);">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              <line x1="12" y1="15" x2="12" y2="17"/>
+            </svg>
+          </div>
+          <h3 class="tool-title">Password Generator</h3>
+          <p class="tool-desc">
+            Generate strong random passwords and memorable passphrases instantly — with length control, character sets, strength meter, and batch mode. All in-browser, zero data sent.
+          </p>
+          <div class="tool-tags">
+            <span class="tool-tag">Security</span>
+            <span class="tool-tag">Privacy</span>
+            <span class="tool-tag">Utility</span>
+          </div>
+        </a>
+        
+        <!-- Another Coming Soon -->
+        <div class="tool-card" style="opacity: 0.6; cursor: default;">
+          <div class="tool-icon" style="background: linear-gradient(135deg, #4a4a6a, #6a6a8a);">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 16v-4M12 8h.01"/>
+            </svg>
+          </div>
+          <h3 class="tool-title">Coming Soon</h3>
+          <p class="tool-desc">
+            More tools coming your way. Stay tuned for updates and new interactive experiments.
+          </p>
+          <div class="tool-tags">
+            <span class="tool-tag">Soon</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Ankit Verma. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="../assets/tools/js/tools.js"></script>
+  
+</body>
+</html>

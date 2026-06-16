@@ -1,0 +1,109 @@
+Project Experience
+1. TourTripX – Flight Booking System
+Laravel, Vue.js
+A complete platform for booking and managing flights:
+
+Public-facing website for real-time flight booking — tourtripx.com
+
+CRM for handling bookings, customer data, agents, and workflows
+
+    API management system to resell flights via third-party platforms
+
+    Mobile app APIs for Android/iOS for user and agent apps
+
+2. TourTripX CRM – Full Trip Management System
+Laravel, Vue.js
+A powerful CRM built to manage travel leads, trips, and operations:
+
+End-to-end trip lifecycle management including leads, quotes, booking, invoicing, and follow-ups
+
+Task assignments, reporting, and team management
+
+URL: crm.tourtripx.com
+
+3. Cabsules – Cab Booking CRM with Driver Tracking
+Laravel, Vue.js
+A CRM solution for cab service providers with real-time features:
+
+Lead and booking management for cab services
+
+Real-time driver tracking and trip updates with GPS integration
+
+WordPress plugin for automatic lead capture from the main website
+
+Dedicated mobile APIs for drivers and customers
+
+URL: crm.cabsules.com
+
+4. MailTidy – Email List Cleaner SaaS Application
+Laravel
+A SaaS tool for cleaning and validating large email lists:
+
+Removes invalid, fake, or risky emails to improve deliverability
+
+Supports bulk file uploads, real-time SMTP checks, and API access
+
+User dashboard with credits, billing, and usage tracking
+
+Available on CodeCanyon
+
+5. Seolise – SEO Toolset Platform
+Laravel
+An all-in-one platform for SEO audits and analysis:
+
+Features include keyword tracking, backlink checks, competitor analysis, and website audits
+
+Designed as a self-hosted or SaaS tool for agencies and marketers
+
+6. Site Down Detector – Website Monitoring SaaS
+Laravel
+Monitors websites for uptime and performance issues:
+
+Notifies users via email or SMS in case of downtime
+
+Includes monitoring history, SSL certificate tracking, and multi-user SaaS support
+
+Available on CodeCanyon
+
+7. WpDigiPro – WordPress Plugin for Digital Product eCommerce
+Self-Developed WordPress Plugin
+A feature-rich plugin to sell digital products via WordPress:
+
+Developed with 50+ sub-plugins for payments, marketing, automation, and integrations
+
+Features license management, secure delivery, customer accounts, and affiliate tools
+
+Built with a modular, scalable architecture and seamless theme compatibility
+
+8. JeeExpat – Coaching Management System
+CodeIgniter
+ERP solution for coaching institutes and educational centers:
+
+Student registration, exam setup, mock tests, fee management, and attendance tracking
+
+Integrated student portal for study material, notifications, and payments
+
+Guardian panel for performance insights and fee monitoring
+
+Live at: jeeexpert.in
+
+9. Multi-site CMS Platform
+Laravel
+A custom CMS platform for managing over 100 websites from a single admin panel:
+
+Each website has its own frontend, admin panel, and theme
+
+Super Admin Panel supports adding/editing websites, managing domains/subdomains, syncing content, and database control
+
+Ideal for agencies managing multiple client websites with shared or isolated resources
+
+10. Online Test Management System
+Laravel / CodeIgniter (varies by version)
+A platform for creating and managing online exams:
+
+Question bank, time-limited tests, scoring system, and detailed results
+
+Student portal with registration, test history, and feedback
+
+Admin features for test assignment, scheduling, and analytics
+
