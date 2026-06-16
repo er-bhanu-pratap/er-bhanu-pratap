@@ -623,16 +623,118 @@
   <script>
   /* ============ PROJECT DATA ============ */
   const projectsData = [
-    { name: 'TourTripX', icon: '✈️', tech: ['Laravel', 'Vue.js'], desc: 'A complete flight booking platform.', points: ['Public-facing website for real-time flight booking — tourtripx.com', 'CRM for bookings, customer data, agents & workflows', 'API system to resell flights via third-party platforms', 'Mobile app APIs for Android/iOS'] },
-    { name: 'TourTripX CRM', icon: '🗺️', tech: ['Laravel', 'Vue.js'], desc: 'Powerful CRM for travel leads, trips & operations.', points: ['End-to-end trip lifecycle: leads, quotes, booking, invoicing', 'Task assignments, reporting & team management', 'WordPress plugin for pushing leads to CRM', 'URL: crm.tourtripx.com'] },
-    { name: 'Cabsules', icon: '🚕', tech: ['Laravel', 'Vue.js'], desc: 'CRM for cab services with GPS tracking & lead management.', points: ['Lead & booking management', 'Real-time driver tracking with GPS', 'Mobile APIs for Android/iOS', 'URL: crm.cabsules.com'] },
-    { name: 'MailTidy', icon: '📧', tech: ['Laravel'], desc: 'Email List Cleaner SaaS Application.', points: ['Removes invalid/risky emails to improve deliverability', 'Bulk uploads, SMTP validation & API access', 'Multi-tenant SaaS architecture', 'Available on CodeCanyon'] },
-    { name: 'Seolise', icon: '🔍', tech: ['Laravel'], desc: 'All-in-one SEO toolset platform for audits & analysis.', points: ['Keyword tracking, backlink monitoring & competitor analysis', 'Full SEO audit reports', 'Designed for agencies & marketers'] },
-    { name: 'Site Down Detector', icon: '📡', tech: ['Laravel'], desc: 'Website uptime monitoring SaaS.', points: ['Monitors uptime & sends alerts via email/SMS', 'SSL expiry, HTTP errors & latency tracking', 'Multi-user SaaS with plans & billing', 'Available on CodeCanyon'] },
-    { name: 'WpDigiPro', icon: '🛒', tech: ['WordPress'], desc: 'Digital product eCommerce plugin for WordPress.', points: ['Modular architecture with 50+ sub-plugins', 'Multiple payment gateways & marketing integrations', 'License key generation & secure delivery'] },
-    { name: 'JeeExpat', icon: '🎓', tech: ['CodeIgniter'], desc: 'Coaching institute management system.', points: ['Student registration, mock tests & attendance tracking', 'Online test system & result analytics', 'Live at: jeeexpert.in'] },
-    { name: 'Multi-site CMS', icon: '🌐', tech: ['Laravel'], desc: 'CMS to manage 100+ websites from a single panel.', points: ['Each domain has individual frontend & admin portal', 'Super admin panel for content, settings & databases', 'Scalable & easy content deployment'] },
-    { name: 'Online Test Management', icon: '📝', tech: ['Laravel', 'CodeIgniter'], desc: 'Platform for creating and managing online exams.', points: ['Question bank, timed exams & automatic scoring', 'Student portal for test history & results', 'Admin scheduling, assigning & analysis tools'] }
+    {
+      name: 'UnlistedZone',
+      icon: '📊',
+      tech: ['Laravel', 'Vue.js'],
+      desc: 'Platform for Buying and Selling Unlisted & Pre-IPO Shares',
+      points: [
+        'Developed and maintained the public-facing platform for buying, selling, and tracking unlisted & Pre-IPO shares across India',
+        'Built a comprehensive CRM for managing investors, leads, transactions, partner networks, customer support, and operational workflows',
+        'Developed secure REST APIs powering Android and iOS mobile applications for portfolio tracking, live share prices, order placement, and user management',
+        'Implemented real-time market data, historical price charts, portfolio management, and investment research modules',
+        'Created partner and reseller management systems including lead tracking, commission management, and performance dashboards',
+        'Integrated role-based access controls, reporting tools, and automated business processes to streamline internal operations'
+      ]
+    },
+    {
+      name: 'TourTripX',
+      icon: '✈️',
+      tech: ['Laravel', 'Vue.js'],
+      desc: 'Online flight booking platform with B2B and B2C travel solutions.',
+      points: [
+        'Developed a real-time flight booking platform with search, fare comparison, and reservation management',
+        'Built APIs for flight inventory distribution and third-party reseller integrations',
+        'Designed and maintained REST APIs powering Android and iOS mobile applications',
+        'Integrated payment gateways, booking workflows, and automated ticketing processes',
+        'Optimized performance, security, and scalability for high-volume travel transactions'
+      ]
+    },
+    {
+      name: 'TourTripX CRM',
+      icon: '🗺️',
+      tech: ['Laravel', 'Vue.js'],
+      desc: 'Comprehensive travel CRM for lead management, bookings, and operations.',
+      points: [
+        'Managed the complete travel lifecycle from lead capture to quotations, bookings, invoicing, and post-sales support',
+        'Implemented task management, team collaboration, reporting, and workflow automation features',
+        'Developed agent and customer management modules with role-based access controls',
+        'Built a WordPress plugin to automatically sync website inquiries and leads with the CRM',
+        'Created dashboards and analytics tools for operational monitoring and business insights'
+      ]
+    },
+    {
+      name: 'Cabsules',
+      icon: '🚕',
+      tech: ['Laravel', 'Vue.js'],
+      desc: 'Cab booking and fleet management CRM with real-time tracking.',
+      points: [
+        'Built a centralized CRM for managing leads, bookings, customers, drivers, and fleet operations',
+        'Implemented real-time GPS tracking for vehicles with route and trip monitoring',
+        'Developed REST APIs powering Android and iOS applications for drivers and customers',
+        'Created reporting dashboards, automated workflows, and booking management tools'
+      ]
+    },
+    {
+      name: 'MailTidy',
+      icon: '📧',
+      tech: ['Laravel'],
+      desc: 'SaaS platform for email verification and list hygiene.',
+      points: [
+        'Developed an email validation platform to identify invalid, disposable, and high-risk email addresses',
+        'Implemented bulk verification, SMTP validation, and real-time API services',
+        'Designed a scalable multi-tenant SaaS architecture with subscription management',
+        'Improved email deliverability and campaign performance through advanced verification checks'
+      ]
+    },
+    {
+      name: 'Seolise',
+      icon: '🔍',
+      tech: ['Laravel'],
+      desc: 'Comprehensive SEO analysis and digital marketing platform.',
+      points: [
+        'Built tools for keyword rank tracking, backlink monitoring, and competitor analysis',
+        'Developed automated website auditing with actionable SEO recommendations',
+        'Generated detailed SEO reports and performance insights for agencies and businesses',
+        'Implemented dashboards for tracking search visibility and optimization opportunities'
+      ]
+    },
+    {
+      name: 'Site Down Detector',
+      icon: '📡',
+      tech: ['Laravel'],
+      desc: 'Website monitoring platform for uptime, performance, and SSL tracking.',
+      points: [
+        'Developed a SaaS-based monitoring system for website uptime and availability checks',
+        'Implemented instant alerts via email and SMS for downtime and service disruptions',
+        'Added SSL certificate monitoring, latency tracking, and HTTP error detection',
+        'Built subscription management, billing, and multi-user account functionality'
+      ]
+    },
+    {
+      name: 'School Management System',
+      icon: '🏫',
+      tech: ['CodeIgniter'],
+      desc: 'End-to-end school administration and academic management platform.',
+      points: [
+        'Developed modules for student, staff, classroom, and academic management',
+        'Implemented attendance tracking, timetable scheduling, examinations, and grading systems',
+        'Built fee collection, reporting, and analytics tools for administrators',
+        'Streamlined communication and operational workflows across educational institutions'
+      ]
+    },
+    {
+      name: 'WpDigiPro',
+      icon: '🛒',
+      tech: ['WordPress'],
+      desc: 'WordPress plugin ecosystem for selling and managing digital products.',
+      points: [
+        'Designed a modular architecture with 50+ extensions and feature modules',
+        'Integrated multiple payment gateways, marketing tools, and automation services',
+        'Implemented secure digital product delivery and license key management',
+        'Developed scalable eCommerce features for creators, businesses, and software vendors'
+      ]
+    }
   ];
 
   function renderProjects() {
