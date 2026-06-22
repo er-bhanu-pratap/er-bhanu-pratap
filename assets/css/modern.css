@@ -18,7 +18,13 @@
   --tr:        0.35s cubic-bezier(0.4,0,0.2,1);
 }
 
-html { scroll-behavior: smooth; font-size: 16px; }
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -26,6 +32,8 @@ body {
   font-family: 'Inter', 'Poppins', system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   line-height: 1.75;
 }
@@ -553,7 +561,7 @@ body.hovered .cursor-follower {
    MOBILE NAV OVERLAY
    =================================================== */
 #mobile-nav {
-  position: fixed; inset: 0; z-index: 990;
+  position: fixed; inset: 0; z-index: 1001;
   background: rgba(7,7,26,.97); backdrop-filter: blur(20px);
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   gap: 36px; transform: translateX(100%); transition: transform .4s cubic-bezier(.4,0,.2,1);
@@ -595,8 +603,27 @@ body.hovered .cursor-follower {
   .services-grid { grid-template-columns: repeat(2,1fr); }
 }
 @media (max-width: 768px) {
+  main,
+  section,
+  #footer,
+  #hero,
+  #particles-js {
+    max-width: 100%;
+    overflow-x: clip;
+  }
   .nav-links, .nav-cta { display: none; }
   #nav-toggle { display: flex; }
+  .nav-logo,
+  .hero-content,
+  .hero-title,
+  .hero-desc,
+  .hero-typed-wrap,
+  .section-title,
+  .contact-val,
+  .contact-val a {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
   .hero-socials { display: none; }
   .skills-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }

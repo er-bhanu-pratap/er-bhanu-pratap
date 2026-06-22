@@ -32,6 +32,12 @@
 
     <style>
       /* ---- Chat-specific styles ---- */
+      html,
+      body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+      }
       body { background: var(--bg); }
 
       /* ---- Login Screen ---- */
@@ -78,11 +84,22 @@
       #chat { display: none; min-height: 100vh; padding: 80px 0 0; }
       .chat-wrap {
         display: flex; height: calc(100vh - 80px);
-        max-width: 1100px; margin: 0 auto;
+        width: 100%; max-width: 1100px; margin: 0 auto;
         border-radius: 20px 20px 0 0; overflow: hidden;
         border: 1px solid rgba(255,255,255,.08); border-bottom: none;
         background: rgba(255,255,255,.03);
         backdrop-filter: blur(16px);
+      }
+      #login,
+      #chat,
+      .login-card,
+      .chat-wrap,
+      .chat-sidebar,
+      .chat-main,
+      .send-box input,
+      .user-info,
+      .chat-main-head > div {
+        min-width: 0;
       }
 
       /* Sidebar */
@@ -133,6 +150,14 @@
       }
       .user-info h4 { font-size: .9rem; font-weight: 600; margin-bottom: 2px; }
       .user-info p  { font-size: .75rem; color: var(--muted); }
+      .user-info h4,
+      .user-info p,
+      .conv-name,
+      .conv-bio {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
       .user-dot {
         width: 9px; height: 9px; border-radius: 50%;
         background: var(--accent-3); margin-left: auto; flex-shrink: 0;
@@ -226,8 +251,8 @@
         .chat-sidebar { width: 100%; position: absolute; inset: 0; z-index: 10; background: var(--bg2); transition: transform .3s; }
         .chat-sidebar.hidden { transform: translateX(-100%); }
         .chat-main-head .back-btn { display: flex; }
-        .chat-wrap { position: relative; border-radius: 0; }
-        #chat { padding-top: 60px; }
+        .chat-wrap { position: relative; border-radius: 0; height: calc(100dvh - 60px); }
+        #chat { min-height: 100dvh; padding-top: 60px; }
       }
     </style>
 </head>
